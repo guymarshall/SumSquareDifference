@@ -9,17 +9,17 @@
 int main(int argc, char const *argv[])
 {
     std::cout <<"Number: ";
-    int number;
+    long long number;
     std::cin >> number;
 
-    std::vector<int> numbers = numberToVector(number);
+    std::vector<long long> numbers = numberToVector(number);
 
-    std::vector<int> squaredValues = squareVectorValues(numbers);
-    int sumOfSquaredValues = sum(squaredValues);
-    int sumOfValues = sum(numbers);
+    std::vector<long long> squaredValues = squareVectorValues(numbers);
+    long long sumOfSquaredValues = sum(squaredValues);
+    long long sumOfValues = sum(numbers);
 
-    int squaredSum = pow(sumOfValues, 2);
-    int difference = squaredSum - sumOfSquaredValues;
+    long long squaredSum = pow(sumOfValues, 2);
+    long long difference = squaredSum - sumOfSquaredValues;
     
     std::cout << "Difference between " << squaredSum << " and " << sumOfSquaredValues << " is: " << difference << std::endl;
     return 0;

@@ -1,11 +1,11 @@
 #include <vector>
 #include <cmath>
 
-std::vector<int> numberToVector(int number)
+std::vector<long long> numberToVector(long long number)
 {
-    std::vector<int> numbers;
+    std::vector<long long> numbers;
 
-    for (int i = 1; i <= number; i++)
+    for (long long i = 1; i <= number; i++)
     {
         numbers.push_back(i);
     }
@@ -13,11 +13,11 @@ std::vector<int> numberToVector(int number)
     return numbers;
 }
 
-std::vector<int> squareVectorValues(std::vector<int>& values)
+std::vector<long long> squareVectorValues(std::vector<long long>& values)
 {
-    std::vector<int> squaredValues;
+    std::vector<long long> squaredValues;
 
-    for (int i = 0; i < values.size(); i++)
+    for (long long i = 0; i < values.size(); i++)
     {
         squaredValues.push_back(pow(values[i], 2));
     }

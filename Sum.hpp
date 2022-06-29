@@ -1,9 +1,9 @@
 #include <vector>
 
-int sum(std::vector<int>& numbers)
+long long sum(std::vector<long long>& numbers)
 {
-    int sum = 0;
-    for (int number: numbers)
+    long long sum = 0;
+    for (long long number: numbers)
     {
         sum += number;
     }
