@@ -11,11 +11,14 @@
 
 #include <iostream>
 #include "Sum.hpp"
+#include <vector>
 
 #define LOG(x) std::cout << x << std::endl
 
 int main(int argc, char const *argv[])
 {
     LOG("Hello, World!");
+    std::vector<int> numbers = {1, 2, 3, 4, 5, 6, 7};
+    LOG(sum(numbers));// works :)
     return 0;
 }
